@@ -35,12 +35,12 @@ File with all the information about the documents and scripts contained in the r
       
 Once the script, data and trained models files have been downloaded, the following changes could be made to the script file based on the desired output.
  
-    - line 77, 97, 204, 225, 344, 369, 492, 516: to change the name of the model file. Eg. load_dt('dt_model.joblib'), save_ann(ann_model, 'ann_model.joblib')
-    - line 102, 230, 374, 521: to load a pretrained model or train a new one. Eg. DTmodel(True), RFmodel(False)
-    - from line 566 to 682: to change the data from the patients to diagnose.
-    - line 81, 208, 347, 495, 688: to load the correct (csv) file. Eg. pd.read_csv(r"C:...\cardio_train.csv")
-    - line 696: to train and test with the desired quantitiy of patients. Eg. 5000, 15000, 35000, 50000 or comment the line
-    - line 733: to work with the desired model. Eg. main_dt(), main_rf(), main_cnn(), or main_ann()
+    - line 77, 85, 222, 229, 379, 386, 550, 556: to change the name of the model file. Eg. load_dt('dt_model.joblib'), save_ann(ann_model, 'ann_model.joblib')
+    - line 90, 234, 391, 561: to load a pretrained model or train a new one. Eg. DTmodel(True), RFmodel(False)
+    - from line 636 to 932: to change the data from the patients to diagnose.
+    - line 941: to load the correct (csv) file. Eg. pd.read_csv(r"C:...\cardio_train.csv")
+    - line 950: to train and test with the desired quantitiy of patients. Eg. 5000, 15000, 35000, 50000 or comment the line
+    - line 986: to work with the desired model. Eg. main_dt(), main_rf(), main_cnn(), or main_ann()
 Finally, to run the file correctly the following command has to be used in the terminal in the appropriate directory:
 ```
 python .\CODE_MariaSaezCarazo.py 
